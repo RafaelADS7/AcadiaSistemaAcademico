@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Adiciona box-sizing para facilitar o controle de largura e altura */
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    max-width: 320px;
+    height: 100%;
+    margin-bottom: 3%;
+}
+
+header {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #C1C1C1;
+}
+
+.geral {
+    height: 70%;
+    width: 100%;
+    display: flex;
+}
+
+h3 {
+    margin-top: 2%;
+}
+
+.imagensTopo {
+    width: 10%;
+    height: 40%;
+    margin: 2%;
+    cursor: pointer;
+}
+
+
+
