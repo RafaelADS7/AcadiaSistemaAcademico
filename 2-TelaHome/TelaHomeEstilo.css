@@ -20,6 +20,7 @@ main {
     max-width: 320px;
     height: 100%;
     margin-bottom: 3%;
+    position: relative;
 }
 
 header {
@@ -28,6 +29,7 @@ header {
     display: flex;
     justify-content: space-between;
     border-bottom: 2px solid #C1C1C1;
+    left: 20px; /* Move o elemento 20px para a direita */
 }
 
 .geral {
@@ -46,6 +48,36 @@ h3 {
     margin: 2%;
     cursor: pointer;
 }
+
+nav { 
+    position: absolute; /* Posiciona o <nav> dentro do <main> */
+    top: 20%; /* Alinha no topo do <main> */
+    left: 0; /* Gruda na lateral esquerda */
+    background-color: #1976D2;
+    width: 15%;
+    height: 80%;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none; /* Remove os pontos da lista */
+    margin-bottom: 10%;
+}
+
+li {
+    margin-bottom: 10%;
+}
+
+
+.hidden {
+    display: none; /* O elemento não é exibido e também não ocupa espaço */
+    
+}
+
+
 
 
 
