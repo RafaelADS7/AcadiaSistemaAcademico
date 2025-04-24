@@ -1,12 +1,14 @@
-// Função para alternar a visibilidade do menu lateral
-function toggleMenu() {
-    const menu = document.getElementById('menuLateral');
-    const currentLeft = menu.style.left;
+// Seleciona a imagem e o menu
+const menuIcon = document.getElementById('menuIcon');
+const menu = document.getElementById('menu');
 
-    // Alterna a posição do menu lateral
-    if (currentLeft === '0px') {
-        menu.style.left = '-250px';  // Esconde o menu
+// Adiciona evento de clique na imagem
+menuIcon.addEventListener('click', function() {
+    // Alterna entre mostrar ou esconder o menu
+    if (menu.style.display === 'none' || menu.style.display === '') {
+        menu.style.display = 'block'; // Mostra o menu
     } else {
-        menu.style.left = '0px';  // Mostra o menu
+        menu.style.display = 'none'; // Esconde o menu
     }
-}
+
+});
