@@ -23,6 +23,9 @@ myButton1.addEventListener('click', function () {
         myButton1.style.color = 'white';
         myButton2.style.backgroundColor = '#D9D9D9';
         myButton3.style.backgroundColor = '#D9D9D9';
+
+        myButton2.style.color = 'black';
+        myButton3.style.color = 'black';
     } else {
         myButton1.style.backgroundColor = '#D9D9D9';
         myButton2.style.backgroundColor = '#D9D9D9';
@@ -33,11 +36,16 @@ myButton1.addEventListener('click', function () {
 
 // Adiciona evento de clique para o botão 2
 myButton2.addEventListener('click', function () {
-    if (myButton2.style.backgroundColor === 'rgb(217, 217, 217)') {
+    if (myButton2.style.backgroundColor === 'rgb(217, 217, 217)' ) {
         myButton1.style.backgroundColor = '#D9D9D9';
         myButton2.style.backgroundColor = '#1976D2';
         myButton2.style.color = 'white';
         myButton3.style.backgroundColor = '#D9D9D9';
+
+        myButton1.style.color = 'black';
+        myButton3.style.color = 'black';
+
+
     } else {
         myButton1.style.backgroundColor = '#D9D9D9';
         myButton2.style.backgroundColor = '#D9D9D9';
@@ -53,6 +61,9 @@ myButton3.addEventListener('click', function () {
         myButton2.style.backgroundColor = '#D9D9D9';
         myButton3.style.backgroundColor = '#1976D2';
         myButton3.style.color = 'white';
+
+        myButton1.style.color = 'black';
+        myButton2.style.color = 'black';
     } else {
         myButton1.style.backgroundColor = '#D9D9D9';
         myButton2.style.backgroundColor = '#D9D9D9';
@@ -60,3 +71,57 @@ myButton3.addEventListener('click', function () {
         myButton3.style.color = 'black';
     }
 });
+
+
+
+
+
+
+
+
+const tela1 = document.getElementById('tela1');
+const tela2 = document.getElementById('tela2');
+const tela3 = document.getElementById('tela3');
+
+
+myButton1.addEventListener('click', function () {
+    if (tela1.style.display === 'none' || menu.style.display === '') {
+        tela1.style.display = 'block';
+        tela2.style.display = 'none';
+        tela3.style.display = 'none';
+    } else if (myButton1.style.display === 'block'){
+        tela1.style.display = 'block';
+        tela2.style.display = 'none';
+        tela3.style.display = 'none';
+    }
+});
+
+
+myButton2.addEventListener('click', function () {
+    if (tela2.style.display === 'none' || menu.style.display === '') {
+        tela1.style.display = 'none';
+        tela2.style.display = 'block';
+        tela3.style.display = 'none';
+    } else if (tela2.style.display === 'block'){
+        tela1.style.display = 'none';
+        tela2.style.display = 'block';
+        tela3.style.display = 'none';
+    }
+});
+
+myButton3.addEventListener('click', function () {
+    if (tela3.style.display === 'none' || menu.style.display === '') {
+        tela1.style.display = 'none';
+        tela2.style.display = 'none';
+        tela3.style.display = 'block';
+    } else if (tela3.style.display === 'block'){
+        tela1.style.display = 'none';
+        tela2.style.display = 'none';
+        tela3.style.display = 'block';
+    }
+});
+
+
+
+
+
