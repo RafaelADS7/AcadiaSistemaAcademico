@@ -10,14 +10,78 @@
     
     <main>
        <header> 
-            <img src="menu_azul.png" class="imagensTopo" alt="" > 
+            <img src="menu_azul.png" class="imagensTopo" id="menuIcon" alt="" > 
             <h3> Home </h3>   
             <img src="Personagem_azul.png" class="imagensTopo" alt="">     
        </header>
 
-       <section class="geral">
+       <nav class="hidden" id="menu">
+            <ul>
+                <li>
+                    <img src="menu_azul.png" class="imagensTopo" id="menuIcon" alt="" > 
+                </li>
+                <li>
+                    <img src="Personagem.png" alt="">
+                </li>
+                <li>
+                    <img src="Personagem.png" alt="">
+                </li>
+                <li>
+                    <img src="Personagem.png" alt="">
+                </li>
+                <li>
+                    <img src="Personagem.png" alt="">
+                </li>
+                <li>
+                    <img src="Personagem.png" alt="">
+                </li>
+                <li>
+                    <img src="Personagem.png" alt="">
+                </li>
+                <li>
+                    <img src="Personagem.png" alt="">
+                </li>
+                <li>
+                    <img src="Personagem.png" alt="">
+                </li>
+            </ul>
+        </nav>
 
+        
+       <section class="geral">
+            <section class="opcoes">
+                <button id="myButton1"> Feed </button>
+                <button id="myButton2"> Notificações </button>
+                <button id="myButton3"> Calendário </button>
+            </section>
+            <div id="tela1" class="escondido"> 
+                <div class="header_das_imagens">
+                    <button class="botao_para_clicar_no_perfil_da_cordenacao"> </button>
+                    <h5>Coordenação UNIFIP</h5>
+                    <br>
+                </div>
+                
+                <img class="imagem_feed" src="imagem_feed.png" alt="">
+                <p style="font-size: 0.9rem; text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed diam lorem. Aenean sit amet condimentum dui. Phasellus posuere elit at gravida dapibus.</p>
+                <section class="bloco_interacoes_das_imagens_geral">
+                    <div class="bloco_interacoes_das_imagens1">
+                        <img class="imagens_interacoes" id="imagem_like" src="like.png" alt="">
+                        <img class="imagens_interacoes" id="imagem_deslike" src="deslike.png" alt="">
+                    </div>
+                    <div class="bloco_interacoes_das_imagens2">
+                        <img class="imagens_interacoes" id="imagem_comentarios" src="comentarios.png" alt="">
+                        <img class="imagens_interacoes" id="imagem_guardar" src="guardar.png" alt="">
+                    </div>
+                </section>
+                
+            </div>
+            <div id="tela2" class="escondidos">Tela 2: Notificações</div>
+            <div id="tela3" class="escondidos">Tela 3: Calendário</div>
        </section>
+       
+       
+
+       <section></section>
     </main>
       
       <script src="TelaHomescript.js"></script>
